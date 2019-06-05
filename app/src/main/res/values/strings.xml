@@ -7,4 +7,7 @@
     <string name="select_city">Город</string>
     <string name="St_Petersburg">Санкт-Петербург</string>
     <string name="Yekaterinburg">Екатеринбург</string>
+    <string name="temperature">Температура</string>
+    <string name="chart">График</string>
+    <string name="backToMenu">В меню</string>
 </resources>
