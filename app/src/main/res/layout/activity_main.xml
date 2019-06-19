@@ -1,47 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
 
-    <TextView
-        android:id="@+id/label"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/text_params"></TextView>
-
-    <Button
-        android:id="@+id/buttonShow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/label"
-        android:layout_alignParentRight="true"
-        android:layout_marginLeft="10dip"
-        android:text="@string/ShowWeather"></Button>
-
-    <Spinner
-        android:id="@+id/spinner_city"
-        android:layout_width="226dp"
-        android:layout_height="25dp"
-        android:layout_alignTop="@+id/buttonShow"
-        android:layout_marginLeft="10dip"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="50dp"
-        android:layout_toLeftOf="@+id/buttonShow"></Spinner>
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/spinner_city"
-        android:layout_marginLeft="10dip"
-        android:text="@string/show_chart" />
-
-    <CalendarView
-        android:id="@+id/calendarView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox"
-        android:layout_alignParentStart="true" />
-
-
-</RelativeLayout>
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark" />
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_above="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    </RelativeLayout>

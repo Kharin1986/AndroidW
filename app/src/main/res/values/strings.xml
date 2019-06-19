@@ -1,13 +1,18 @@
 <resources>
-    <string name="app_name">HW</string>
+    <string name="app_name">Weather</string>
     <string name="ShowWeather">Показать</string>
     <string name="text_params">Выберите параметры:</string>
     <string name="show_chart">Показать график</string>
-    <string name="Moscow">Москва</string>
-    <string name="select_city">Город</string>
-    <string name="St_Petersburg">Санкт-Петербург</string>
-    <string name="Yekaterinburg">Екатеринбург</string>
     <string name="temperature">Температура</string>
     <string name="chart">График</string>
     <string name="backToMenu">В меню</string>
+    <string name="temp1">Ощущаемая температура</string>
+    <string name="humidity">Влажность</string>
+    <string name="wind">Скорость ветра</string>
+    <string-array name="citylist">
+        <item>Выберите город</item>
+        <item>Москва</item>
+        <item>Санкт-Петербург</item>
+        <item>Екатеринбург</item>
+    </string-array>
 </resources>
